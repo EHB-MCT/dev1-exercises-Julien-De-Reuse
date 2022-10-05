@@ -70,7 +70,8 @@ function drawLine() {
     context.beginPath();
     context.moveTo(775,200);
     context.lineTo(775,25);
-    context.lineTo();
+    context.lineTo(900,200);
+    context.lineTo(900,25);
     context.stroke();
 
 }
