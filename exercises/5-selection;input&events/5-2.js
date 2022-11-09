@@ -4,14 +4,33 @@ import * as Utils from "../../scripts/utilsLKR.js";
 
 let width = context.canvas.width;
 let height = context.canvas.height;
+context.fillRect(0,0,width,height);
+
+// drawMaze();
+// function drawMaze(){
+//     for( let x = 0; x < width; x = x+10){
+//         for(let y = 0; y < height ; y = y+10){
+//         context.lineWidth = 5;
+//         let r = Math.round(Math.random());
+//         if (r== 0){
+//         Utils.drawLine(x, y,x+10,y+10);
+//         } else{
+//         Utils.drawLine(x, y+10,x+10,y);
+//         }}
+// }
+// }
 
 drawMaze();
 function drawMaze(){
     for( let x = 0; x < width; x = x+10){
         for(let y = 0; y < height ; y = y+10){
         context.lineWidth = 5;
-        let r = Math.round(Math.random());
-        if (r== 0){
+        let r = Math.random()*255;
+        let g = Math.random()*255;
+        let b = Math.random()*255;
+        context.strokeStyle = Utils.rgb(r,g, b); 
+        let random = Math.round(Math.random());
+        if ( random== 0){
         Utils.drawLine(x, y,x+10,y+10);
         } else{
         Utils.drawLine(x, y+10,x+10,y+0);
