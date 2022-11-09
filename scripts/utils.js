@@ -55,3 +55,10 @@ export function strokeEllipse(x, y, rX, rY){
     context.ellipse(x,y, rX, rY, 0, 0, Math.PI*2);
     context.stroke();
 }
+
+//export function drawBubbles(x, y, rX, rY, r, g, b){
+    //fillEllipse(x, y, rX, rY);
+   // strokeEllipse(x, y, rX, rY);
+    //let rgb = "rgb(" + r + "," + g + "," + b +")";
+  //  return rgb;
+//}

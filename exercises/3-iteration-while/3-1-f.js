@@ -1,5 +1,5 @@
 "use strict";
-import context from "../3-iteration-while/scripts/context.js";
+import context from "../../scripts/context.js";
 
 draw();
 
